@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge Pledge</title>
+<meta name="description" content="Put yourself on the edge for wildlife on the edge. Kids pick dares, family and friends give to vote, and every cent goes to nature. Edge Pledge is free. Back in 2026.">
+<meta property="og:title" content="Edge Pledge">
+<meta property="og:description" content="Put yourself on the edge for wildlife on the edge. Kids. Dares. Every cent to nature.">
+<meta property="og:image" content="https://edgepledge.org/assets/share.png">
+<link rel="icon" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" sizes="192x192" href="assets/favicon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111111;
+    --ink2: #1b1b1b;
+    --white: #ffffff;
+    --soft: #c9c9c9;
+    --lime: #d7e500;
+    --red: #f2545b;
+    --cyan: #22c3d6;
+    --green: #2ccf86;
+    --line: #2c2c2c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Archivo',Arial,sans-serif; background:var(--ink); color:var(--white); font-size:17.5px; line-height:1.6; }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+  a { color:var(--lime); }
+
+  .hero { display:grid; grid-template-columns:300px 1fr; gap:56px; align-items:center; padding:84px 0 76px 0; }
+  .hero img { width:100%; max-width:300px; display:block; }
+  .hero h1 { font-size:clamp(32px,5.4vw,56px); font-weight:900; line-height:1.08; letter-spacing:-0.5px; }
+  .hero .tag { color:var(--lime); font-weight:700; font-size:clamp(19px,2.6vw,24px); margin-top:22px; }
+  .hero .back { color:var(--soft); font-weight:600; font-size:clamp(17px,2.2vw,21px); margin-top:6px; }
+  .dots { display:flex; gap:12px; margin-top:24px; }
+  .dots span { width:18px; height:18px; border-radius:50%; display:block; }
+  @media (max-width:760px) {
+    .hero { grid-template-columns:1fr; gap:34px; padding:56px 0; text-align:center; }
+    .hero img { max-width:200px; margin:0 auto; }
+    .dots { justify-content:center; }
+  }
+
+  .free { background:var(--lime); color:var(--ink); text-align:center; padding:48px 20px; }
+  .free p { font-size:clamp(24px,4vw,38px); font-weight:900; letter-spacing:-0.3px; line-height:1.2; }
+  .free p.small { font-size:clamp(16px,2.2vw,19px); font-weight:600; margin-top:12px; letter-spacing:0; }
+
+  section { padding:72px 0; border-top:1px solid var(--line); }
+  h2 { font-size:14px; font-weight:900; letter-spacing:3.5px; color:var(--lime); text-transform:uppercase; margin-bottom:28px; }
+
+  .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:30px; }
+  .steps div { border-top:4px solid var(--red); padding-top:16px; }
+  .steps div:nth-child(2) { border-top-color:var(--cyan); }
+  .steps div:nth-child(3) { border-top-color:var(--lime); }
+  .steps div:nth-child(4) { border-top-color:var(--green); }
+  .steps .n { font-size:13px; font-weight:900; letter-spacing:2px; color:var(--soft); }
+  .steps h3 { font-size:20px; font-weight:900; margin:6px 0 10px 0; }
+  .steps p { font-size:16px; color:#e6e6e6; }
+  @media (max-width:860px) { .steps { grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px) { .steps { grid-template-columns:1fr; } }
+
+  .story p { font-size:clamp(18px,2.4vw,21px); max-width:720px; margin-bottom:18px; color:#ececec; }
+  .story p.sign { color:var(--lime); font-weight:700; }
+
+  .safe ul { list-style:none; display:grid; grid-template-columns:repeat(2,1fr); gap:18px 40px; max-width:880px; }
+  .safe li { font-size:17px; padding-left:26px; position:relative; color:#e6e6e6; }
+  .safe li::before { content:""; position:absolute; left:0; top:9px; width:12px; height:12px; border-radius:50%; background:var(--green); }
+  @media (max-width:640px) { .safe ul { grid-template-columns:1fr; } }
+
+  .sponsors p { color:#e6e6e6; max-width:720px; }
+  .names { display:flex; flex-wrap:wrap; gap:14px; margin-top:26px; }
+  .names a { display:inline-block; border:2px solid var(--white); color:var(--white); text-decoration:none; font-weight:800; padding:12px 18px; border-radius:6px; }
+  .names a:hover { border-color:var(--lime); color:var(--lime); }
+
+  .join { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+  .join h3 { font-size:19px; font-weight:900; margin-bottom:8px; }
+  .join p { font-size:16px; color:#e6e6e6; }
+  @media (max-width:760px) { .join { grid-template-columns:1fr; } }
+  .cta { margin-top:40px; }
+  .cta a { display:inline-block; background:var(--lime); color:var(--ink); font-weight:900; text-decoration:none; padding:16px 26px; border-radius:6px; font-size:18px; }
+
+  footer { border-top:1px solid var(--line); padding:34px 0 46px 0; color:var(--soft); font-size:14px; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="hero">
+    <img src="assets/logo-white.png" alt="Edge Pledge">
+    <div>
+      <h1>Put yourself on the edge for wildlife on the edge.</h1>
+      <p class="tag">Kids. Dares. Every cent to nature.</p>
+      <p class="back">Back in 2026.</p>
+      <div class="dots"><span style="background:#f2545b"></span><span style="background:#22c3d6"></span><span style="background:#d7e500"></span><span style="background:#2ccf86"></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="free">
+  <p>Edge Pledge is free. We take no fees.</p>
+  <p class="small">Our own businesses carry the cost, so every dollar goes to nature.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div>
+        <span class="n">ONE</span>
+        <h3>Pick an animal</h3>
+        <p>Choose an animal on the edge, and the charity that helps it.</p>
+      </div>
+      <div>
+        <span class="n">TWO</span>
+        <h3>Pick your dares</h3>
+        <p>Our dare maker helps you find dares that put you on the edge, not something you already love. Family and friends can dare you too. Or join a team, like your school.</p>
+      </div>
+      <div>
+        <span class="n">THREE</span>
+        <h3>Family vote</h3>
+        <p>Family and friends give to vote for the dare they want to see. Every dollar is a vote, and the money goes to the charity.</p>
+      </div>
+      <div>
+        <span class="n">FOUR</span>
+        <h3>Do the dare</h3>
+        <p>Film it, share it with the people who voted, and the animal wins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>Why we are back</h2>
+    <p>Ten years ago we had a crack at Edge Pledge.</p>
+    <p>The idea was simple. Put yourself on the edge, and connect with the animals already on the edge of extinction.</p>
+    <p>Kids and families picked dares, friends and family voted with donations, and the money went to nature.</p>
+    <p>We raised real money for native animals. But it ran on my own sweat, and life moved on.</p>
+    <p>Since then I have built businesses for nature. Farms, land and conservation. And in all that time, nothing has filled this gap.</p>
+    <p>The thinking from 2016 still stands.</p>
+    <p>This time I get to bring my boys along. That is the bit I am most excited about.</p>
+    <p class="sign">Sam Marwood</p>
+  </div>
+</section>
+
+<section class="safe">
+  <div class="wrap">
+    <h2>Safe for kids</h2>
+    <ul>
+      <li>A parent sets up every account, with their own email.</li>
+      <li>Every dare is checked before it goes live.</li>
+      <li>Videos are seen only by the people who voted.</li>
+      <li>No comments, no messages, no public feed.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sponsors">
+  <div class="wrap">
+    <h2>Our sponsors</h2>
+    <p>These businesses carry the cost of Edge Pledge, so it stays free. If you like what we are doing, please support them.</p>
+    <div class="names">
+      <a href="https://cultivatefarms.com">Cultivate Farms</a>
+      <a href="https://cultivatenature.au">Cultivate Nature</a>
+      <a href="https://naturerecovery.au">Nature Recovery</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Get involved</h2>
+    <div class="join">
+      <div>
+        <h3>Schools</h3>
+        <p>Pick an animal for your school, and every kid can take on a dare for it. We give teachers everything they need.</p>
+      </div>
+      <div>
+        <h3>Charities</h3>
+        <p>If your charity helps an animal on the edge, we would love to have you on Edge Pledge. No fees, ever.</p>
+      </div>
+      <div>
+        <h3>Businesses</h3>
+        <p>I want nature to make money, not just ask for it. That is what <a href="https://cultivatenature.au">Cultivate Nature</a> is about.</p>
+      </div>
+    </div>
+    <div class="cta"><a href="mailto:sam@edgepledge.org">Email Sam</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Edge Pledge, part of Cultivate Nature. &copy; 2026</div>
+</footer>
+
+</body>
+</html>
